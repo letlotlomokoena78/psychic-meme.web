@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Management - Admin - Cheeseboy Fashion</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header"><div class="container"></div></header>
+
+    <section class="seller-management">
+        <div class="container">
+            <div class="management-header">
+                <h2>Seller Management</h2>
+                <a href="admin-dashboard.html" class="back-btn">Back to Dashboard</a>
+            </div>
+
+            <div class="user-stats seller-stats">
+                <div class="stat-card">
+                    <h3>Total Sellers</h3>
+                    <p id="total-sellers">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Approved</h3>
+                    <p id="approved-sellers">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Pending</h3>
+                    <p id="pending-sellers">0</p>
+                </div>
+            </div>
+
+            <div class="sellers-list-section">
+                <h3>Seller Accounts</h3>
+                <div id="seller-accounts-list" class="users-table"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cheeseboy Fashion powered by WAGWAN digitals</p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../../../js/pages/script.js"></script>
+    <script src="../../../js/admin/admin-sellers.js"></script>
+    <script src="js/auth-check.js"></script>
+</body>
+</html>

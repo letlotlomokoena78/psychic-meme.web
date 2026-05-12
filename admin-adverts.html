@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advert Control - Cheeseboy Fashion</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header"><div class="container"></div></header>
+
+    <section class="advert-control">
+        <div class="container">
+            <div class="advert-header">
+                <h2>Advert Control Panel</h2>
+                <a href="admin-dashboard.html" class="back-btn">Back to Dashboard</a>
+            </div>
+            
+            <div class="advert-upload-section">
+                <h3>Upload New Advertisement Clip</h3>
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label for="video-upload">Select Video (10 seconds recommended):</label>
+                        <input type="file" id="video-upload" accept="video/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="video-name">Clip Name:</label>
+                        <input type="text" id="video-name" placeholder="Enter clip name" required>
+                    </div>
+                    <button type="submit" class="upload-btn">Upload Clip</button>
+                </form>
+            </div>
+
+            <div class="advert-list-section">
+                <h3>Active Advertisement Clips</h3>
+                <div id="video-list" class="video-list">
+                    <!-- Videos will be listed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cheeseboy Fashion powered by WAGWAN digitals</p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../../../js/pages/script.js"></script>
+    <script src="../../../js/admin/admin-adverts.js"></script>
+    <script src="js/auth-check.js"></script>
+</body>
+</html>

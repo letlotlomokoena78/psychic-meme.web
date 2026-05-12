@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Manager - Admin - Cheeseboy Fashion</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header"><div class="container"></div></header>
+
+    <section class="coupon-management">
+        <div class="container">
+            <div class="management-header">
+                <h2>Coupon Manager</h2>
+                <a href="admin-dashboard.html" class="back-btn">Back to Dashboard</a>
+            </div>
+
+            <div class="add-coupon-section">
+                <h3>Create New Coupon</h3>
+                <form id="add-coupon-form" class="coupon-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="coupon-code">Coupon Code</label>
+                            <input type="text" id="coupon-code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="coupon-discount">Discount (%)</label>
+                            <input type="number" id="coupon-discount" step="0.1" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="coupon-expiry">Expiry Date</label>
+                            <input type="date" id="coupon-expiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="coupon-usage-limit">Usage Limit</label>
+                            <input type="number" id="coupon-usage-limit" min="1" value="1">
+                        </div>
+                    </div>
+                    <button type="submit" class="upload-btn">Create Coupon</button>
+                </form>
+            </div>
+
+            <div class="coupons-list-section">
+                <h3>Existing Coupons</h3>
+                <div id="coupons-list" class="coupons-table"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cheeseboy Fashion powered by WAGWAN digitals</p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+        </div>
+    </footer>
+
+    <script src="../../../js/pages/script.js"></script>
+    <script src="../../../js/admin/admin-coupons.js"></script>
+    <script src="js/auth-check.js"></script>
+</body>
+</html>

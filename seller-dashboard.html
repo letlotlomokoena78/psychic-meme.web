@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - Cheeseboy Fashion</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="admin-page">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>Cheeseboy</h1></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button>Search</button>
+            </div>
+            <div class="header-icons">
+                <a href="account.html" class="icon">Account</a>
+                <a href="wishlist.html" class="icon">Wishlist</a>
+                <a href="cart.html" class="icon">Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="sales.html">Sale</a></li>
+                <li><a href="seller-login.html">Sell</a></li>
+                <li><a href="account.html">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <div>
+                    <h2>Seller Dashboard</h2>
+                    <p id="seller-summary"></p>
+                </div>
+                <button id="seller-logout-btn" class="logout-btn">Logout</button>
+            </div>
+            <div class="seller-metrics">
+                <div class="stat-card">
+                    <h3>Total Listings</h3>
+                    <p id="seller-listings">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Interest Rate</h3>
+                    <p id="seller-interest-rate">0%</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Pending Orders</h3>
+                    <p id="seller-orders">0</p>
+                </div>
+            </div>
+
+            <div class="add-product-section">
+                <h3>Add Seller Product</h3>
+                <form id="seller-add-product-form" class="product-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="seller-product-name">Product Name</label>
+                            <input type="text" id="seller-product-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-product-price">Price ($)</label>
+                            <input type="number" id="seller-product-price" step="0.01" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="seller-product-category">Category</label>
+                            <select id="seller-product-category" required>
+                                <option value="">Select Category</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-product-type">Product Type</label>
+                            <input type="text" id="seller-product-type" placeholder="e.g. Shoes, Shirt, Golf T-Shirt" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="seller-product-image">Product Image</label>
+                            <div class="image-upload-area" id="seller-image-upload-area">
+                                <input type="file" id="seller-product-image-file" accept="image/*" style="display: none;">
+                                <div class="upload-placeholder">
+                                    <p>Drag & drop an image here or <button type="button" id="seller-browse-btn" class="upload-btn">Browse</button></p>
+                                    <p class="upload-hint">Supported formats: JPG, PNG, GIF</p>
+                                </div>
+                                <img id="seller-image-preview" src="" alt="" style="display: none; max-width: 200px; max-height: 200px;">
+                            </div>
+                            <input type="url" id="seller-product-image-url" placeholder="Or enter image URL" style="margin-top: 10px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-interest-fee">Interest Fee (%)</label>
+                            <input type="number" id="seller-interest-fee" step="0.1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="seller-product-description">Description</label>
+                        <textarea id="seller-product-description" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="upload-btn">Add Listing</button>
+                </form>
+            </div>
+
+            <div class="products-list-section">
+                <h3>Your Seller Listings</h3>
+                <div id="seller-products-list" class="products-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cheeseboy Fashion powered by WAGWAN digitals</p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/seller.js"></script>
+    <script src="js/auth-check.js"></script>
+</body>
+</html>

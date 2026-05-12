@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women - Cheeseboy Fashion</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>Cheeseboy</h1></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button>Search</button>
+            </div>
+            <div class="header-icons">
+                <a href="account.html" class="icon">Account</a>
+                <a href="wishlist.html" class="icon">Wishlist</a>
+                <a href="#" class="icon">Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="advert-banner">
+        <div class="container">
+            <video id="advert-video" autoplay muted loop>
+                <source src="videos/sample-ad.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="sales.html">Sale</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Women's Fashion</h2>
+            <p>Discover the latest trends for women</p>
+            <a href="#" class="btn">Shop Women</a>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Women's Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://via.placeholder.com/250x300?text=Women+Dress" alt="Dress">
+                    <h4>Women's Dress</h4>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                    <button onclick="addToWishlist({id: 'women-dress', name: 'Women\'s Dress', price: 29.99, image: 'https://via.placeholder.com/250x300?text=Women+Dress'})">Add to Wishlist</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/250x300?text=Women+Shoes" alt="Shoes">
+                    <h4>Women's Shoes</h4>
+                    <p>$49.99</p>
+                    <button>Add to Cart</button>
+                    <button onclick="addToWishlist({id: 'women-shoes', name: 'Women\'s Shoes', price: 49.99, image: 'https://via.placeholder.com/250x300?text=Women+Shoes'})">Add to Wishlist</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/250x300?text=Women+Bag" alt="Bag">
+                    <h4>Women's Bag</h4>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                    <button onclick="addToWishlist({id: 'women-bag', name: 'Women\'s Bag', price: 39.99, image: 'https://via.placeholder.com/250x300?text=Women+Bag'})">Add to Wishlist</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/250x300?text=Women+Jewelry" alt="Jewelry">
+                    <h4>Women's Jewelry</h4>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                    <button onclick="addToWishlist({id: 'women-jewelry', name: 'Women\'s Jewelry', price: 19.99, image: 'https://via.placeholder.com/250x300?text=Women+Jewelry'})">Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cheeseboy Fashion powered by WAGWAN digitals</p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../../js/pages/script.js"></script>
+    <script src="../../js/pages/wishlist.js"></script>
+    <script src="../../js/utils/auth-check.js"></script>
+</body>
+</html>

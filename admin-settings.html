@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings - Cheeseboy Fashion</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header"><div class="container"></div></header>
+
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <div>
+                    <h2>Admin Settings</h2>
+                    <p>Manage your admin account preferences and security settings.</p>
+                </div>
+                <div class="dashboard-actions">
+                    <a href="admin-dashboard.html" class="back-btn">Back to Dashboard</a>
+                </div>
+            </div>
+
+            <div id="admin-info" class="admin-info"></div>
+
+            <div class="settings-panel">
+                <div class="settings-card">
+                    <h3>Account Information</h3>
+                    <p><strong>Username:</strong> <span id="settings-username"></span></p>
+                    <p><strong>Email:</strong> <span id="settings-email"></span></p>
+                </div>
+
+                <div class="settings-card">
+                    <h3>Security</h3>
+                    <p>You can update your password and secure your account from unauthorized access.</p>
+                    <button id="change-password-btn" class="upload-btn">Change Password</button>
+                </div>
+
+                <div class="settings-card">
+                    <h3>Preferences</h3>
+                    <label><input type="checkbox" id="setting-notifications"> Receive admin notifications</label>
+                    <label><input type="checkbox" id="setting-email-reports"> Receive daily email reports</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cheeseboy Fashion powered by WAGWAN digitals</p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../../../js/pages/script.js"></script>
+    <script src="../../../js/admin/admin-settings.js"></script>
+    <script src="js/auth-check.js"></script>
+</body>
+</html>
